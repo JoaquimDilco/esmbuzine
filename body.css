@@ -1,0 +1,190 @@
+/* Resetando margens e preenchimentos para evitar inconsistências entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo estilos básicos para o corpo da página */
+body {
+    background-color: rgb(104, 58, 141);
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #512da8;
+}
+
+header img {
+    margin-top: 15px;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    background-color: #673ab7;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #9575cd;
+    border-radius: 5px;
+}
+
+/* Estilo geral das seções */
+section {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ede7f6;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Estilo para a seção de contato */
+#contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contato form input,
+#contato form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+#contato form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#contato form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #512da8;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#contato form input[type="submit"]:hover {
+    background-color: #673ab7;
+}
+
+/* Estilo para a galeria */
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para a seção de missao, visao e valores */
+#missao h3 {
+    font-size: 22px;
+    color: #d1c4e9;
+    margin-bottom: 10px;
+}
+
+#missao ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#missao ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #512da8;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}

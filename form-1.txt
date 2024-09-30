@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Secundaria Mártires de Mbuzine</title>
+    <link rel="stylesheet" href="body.css">
+    <script defer src="javascript.js"></script>
+    <style>
+        body {
+            background-color: rgb(50, 30, 66);
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #090411;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #51584f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escola Secundaria Mártires de Mbuzine</h1>
+        <img src="1111l.jpg" alt="Logo da Escola Secundaria Mártires de Mbuzine">
+        <img src="web site/1111l.jpg" alt="Logo da Escola Secundaria Mártires de Mbuzine">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre a Escola</h2>
+            <p>A Escola Secundaria Mártires de Mbuzine oferece educação de qualidade, preparando os jovens da região para o sucesso em todas as áreas da vida.</p>
+            <p>Nosso compromisso é criar um ambiente acolhedor e seguro para o desenvolvimento dos alunos.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Endereço: Av.Josina Machel </p>
+            <p>Telefone: (258) 85 812 6619 </p>
+            <p>E-mail: <a href="mailto:contato@escolabuzine.pt">Arnaldoalfredo126@gmail.com</a></p>
+
+            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="200" style="border:0;" allowfullscreen=""></iframe>
+
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="galeria">
+                <img src="44444.jpg" alt="Imagem 1">
+                <img src="secundario.jpg" alt="Imagem 2">
+                <img src="6666.jpg" alt="Imagem 3">
+            </div>
+        </section>
+
+        <section id="noticias">
+            <h2>Notícias</h2>
+            <ul>
+                <li><a href="#">Notícia 1</a></li>
+                <li><a href="#">Notícia 2</a></li>
+                <li><a href="#">Notícia 3</a></li>
+            </ul>
+        </section>
+
+        <section id="downloads">
+            <h2>Downloads</h2>
+            <!-- Aqui está o PDF incorporado diretamente -->
+            <h3>Manual do Aluno 2024</h3>
+            <embed src="caminho/para/seu/manual_aluno_2024.pdf" type="application/pdf" width="100%" height="600px" />
+
+            <h3>Formulário de Inscrição 2024</h3>
+            <embed src="caminho/para/seu/formulario_inscricao_2024.pdf" type="application/pdf" width="100%" height="600px" />
+        </section>
+
+        <section id="missao">
+            <h3>Missão:</h3>
+            <p>Fornecer educação de qualidade para o sucesso dos alunos.</p>
+            
+            <h3>Visão:</h3>
+            <p>Ser uma escola de referência reconhecida pela excelência e desenvolvimento integral dos alunos.</p>
+
+            <h3>Valores:</h3>
+            <ul>
+                <li>Respeito</li>
+                <li>Compromisso</li>
+                <li>Inovação</li>
+                <li>Excelência</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Escola Secundaria Mártires de Mbuzine</p>
+    </footer>
+</body>
+</html>
